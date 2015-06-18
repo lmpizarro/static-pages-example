@@ -25,8 +25,8 @@ def page1():
 @app.route('/page2.html')
 def page2():
     content = Markup(my_md.page2())
-    return render_template('page2.html', content=content, title='page2')
-
+    extra = Markup(my_md.page2_extra())
+    return render_template('page2.html', content=content, extra=extra, title='page2')
 
 
 if __name__ == '__main__':

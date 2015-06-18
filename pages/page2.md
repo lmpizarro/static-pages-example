@@ -74,15 +74,26 @@ As Kanye West said:
 
      I think you should use an `<addr>` element here instead.
 
+# Extensions Markdown
+## Abbreviations
+
+The HTML specification 
+is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+
+# Attribute List
+
+[link](http://example.com){: class="foo bar" title="Some title!" }
 
 # Tables
-
-
 
 
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
+
 
 [TOC]

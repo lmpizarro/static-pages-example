@@ -1,6 +1,5 @@
 import markdown
 import codecs
-from markdown.extensions.headerid import HeaderIdExtension
 
 def get_html(page, extensions):
     input_file = codecs.open(page, mode="r", encoding="utf-8")
@@ -10,14 +9,16 @@ def get_html(page, extensions):
     return html
 
 def index():
-    return get_html("pages/index.md", ['markdown.extensions.toc'])
+    return get_html("pages/index.md", ['toc'])
 
 def page1():
-    return get_html("pages/page1.md", ['markdown.extensions.toc'])
+    return get_html("pages/page1.md", ['toc'])
 
 def page2():
-    return get_html("pages/page2.md", ['markdown.extensions.toc',\
-            'markdown.extensions.tables'])
+    return get_html("pages/page2.md", ['extra', 'toc'])
+
+def page2_extra():
+    return get_html("pages/page2_extra.md", ['extra'])
 
 print page1()
 
